@@ -19,9 +19,10 @@ function Compo() {
       src={data.image}
       alt="Shoes" />
   </figure>
-  <div className="">
-    <h2>{data.lastName}</h2>
-    <p>{data.email}</p>
+  <div className="pb-3 pt-3">
+    <p className="n flex px-3 items-center textz"><p className="font-bold texts">Name:</p><p className=" text">{data.lastName}</p></p>
+    <p className="flex px-3 items-center textz"><p className="font-bold texts">Email:</p><p className=" text">{data.email}</p></p>
+    <p className="flex px-3 items-center textz"><p className="font-bold texts">Nomer:</p><p className=" text">{data.phone}</p></p>
    
   </div>
 </div>

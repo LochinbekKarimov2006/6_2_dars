@@ -1,6 +1,18 @@
 import React from 'react'
-
+import {useEffect,useState} from 'react'
 function Navbar() {
+    const ozgartirish=()=>{
+        return localStorage.getItem('rejim')||'winter'
+    }
+    const [rejim,setRejim]=useState(ozgartirish)
+    const thema=()=>{
+        const newThema=rejim=="winter"?'dark':'winter'
+        setRejim(newThema)
+    };
+    useEffect(()=>{
+        document.documentElement.setAttribute('data-theme',rejim)
+        localStorage.setItem('rejim',rejim)
+    },[rejim])
   return (
 <div className="drop-shadow-2xl navbar bg-base-100">
   <div className="navbar-start">
@@ -53,7 +65,7 @@ function Navbar() {
   <div className=" navbar-end flex items-center">
   <label className="swap swap-rotate dropdown dropdown-end">
   {/* this hidden checkbox controls the state */}
-  <input type="checkbox" />
+  <input onClick={()=>{thema()}} checked={rejim=='dark'} readOnly type="checkbox" type="checkbox" />
 
   {/* sun icon */}
   <svg

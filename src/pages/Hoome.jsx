@@ -3,7 +3,7 @@ import Compo from '../components/Compo'
 
 function Hoome() {
   return (
-    <div>
+    <div className='mb-10'>
         <section className="sm:mt-6 lg:mt-8 mt-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 <div
     className="my-10 mx-auto max-w-7xl  sm:mt-12 sm:px-6 md:mt-16 lg:mt-20  xl:mt-28 flex gap-3 lg:flex-justify lg:flex flex-col lg:flex-row">

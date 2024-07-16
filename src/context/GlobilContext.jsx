@@ -1,5 +1,5 @@
 import { createContext,useReducer, } from "react"
-let GlobilContext=createContext(),
+let GlobilContext=createContext();
 
 function GlobilContext() {
   return (
