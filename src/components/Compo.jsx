@@ -5,7 +5,7 @@ function Compo() {
     <div className="div-1">
     {Compon.map((data)=>{
         return (
-            <div className="div-2">
+            <div className="div-2  drop-shadow-md hover:drop-shadow-2xl">
             {/* <img src={data.image} alt="" />
             <h1>{data.lastName}</h1>
             <h1>{data.region}</h1>
@@ -20,8 +20,8 @@ function Compo() {
       alt="Shoes" />
   </figure>
   <div className="">
-    <h2><p className="">Name</p>{data.lastName}</h2>
-    <p></p>
+    <h2>{data.lastName}</h2>
+    <p>{data.email}</p>
    
   </div>
 </div>
