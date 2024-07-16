@@ -13,7 +13,7 @@ function Compo() {
             <h1>{data.firstName}</h1>
             <h1>{data.phone}</h1>
             <h1>{data.zip}</h1> */}
-<div class="card bg-base-100 w-96 shadow-xl">
+<div class="card bg-base-100 shadow-xl">
   <figure>
     <img className="w-full"
       src={data.image}
