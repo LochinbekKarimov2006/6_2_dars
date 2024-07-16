@@ -2,7 +2,7 @@
   max-width: 1216px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: auto auto auto auto;
   justify-content: space-between;
   text-align: center;
 }
